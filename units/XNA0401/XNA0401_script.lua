@@ -44,7 +44,14 @@ XNA0401 = Class(NExperimentalAirTransportUnit) {
         EngineRotatorLeft03 = true,
         EngineRotatorLeft04 = true
     },
-
+	
+ ---@param self AirTransport
+    ---@param totalweight CargoWeight
+    ---@param unit Unit
+    ReduceTransportSpeed = function(self)
+		--no speed reduction from picking up units
+    end,
+	
     ---@param self XNA0401
     ---@param builder Unit
     ---@param layer Layer
