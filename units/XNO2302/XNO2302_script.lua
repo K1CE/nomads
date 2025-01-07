@@ -16,9 +16,9 @@ xno2302 = Class(NOrbitUnit) {
                 local proj = OrbitalGun.CreateProjectileAtMuzzle(self, muzzle)
                 proj.Launcher = self.unit.parent or proj.Launcher
             end,
-		},
-	},
-	    
+        },
+    },
+    
     OnCreate = function(self)
         NOrbitUnit.OnCreate(self)
     end,
